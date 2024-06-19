@@ -10,10 +10,6 @@ const port = 3001;
 
 app.use('/api',userRouter)
 
-app.get('/',(req:Request,res:Response)=>{
-  res.send("home page")
-})
-
 
 app.listen(port, () => {
   console.log(`app running on port ${port}`)
